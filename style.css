@@ -76,7 +76,7 @@ body {
     opacity: 0;
   }
 
-  nav {
+  .navi {
     background: white;
     width: 100vw;
     height: 90vh;
@@ -89,7 +89,7 @@ body {
     transition: left 0.3s ease-in-out;
   }
 
-  .trigger:checked ~ nav {
+  .trigger:checked ~ .navi {
     left: 0;
   }
 
