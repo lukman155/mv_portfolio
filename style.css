@@ -1,5 +1,4 @@
 body {
-    
     font-family: 'Inter', 'sans-serif'
 }
 
@@ -10,26 +9,20 @@ body {
 }
 
 .header {
-    width: 90px;
-height: 28px;
-
-/* Theme 2 / Subhead 1 */
-
 font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
 line-height: 28px;
+color: #172B4D;
 
 display: flex;
 justify-content: space-between;
 align-items: center;
 text-align: center;
 
-color: #28352F;
-flex: none;
-order: 0;
-flex-grow: 0;
+}
+.headertext{
 }
 
 ul {
@@ -44,7 +37,7 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #172B4D;
 }
 .hamburger { 
     margin-left: 10px;
@@ -57,15 +50,13 @@ a {
     display: block;
     height: 3px;
     width: 30px;
-    background: black;
-    display: block;
+    background: #172B4D;
     margin-bottom: 5px;
     position: relative;
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out,
     opacity 0.3s ease-in-out;
 }
 .trigger{
-    float: right;
     display: none;
 }
 .trigger:checked ~ .hamburger span:first-child {
@@ -82,8 +73,10 @@ a {
 }
 
 nav {
-    background: #E5E5E5;;
+    background: white;
     width: 100vw;
+    height: 50vh;
+    border-radius: 0px 0px 50px 50px;
     padding: 20px 28px;
     margin-top: 10px;
     position: absolute;
@@ -115,9 +108,12 @@ h1 {
 flex: none;
 order: 0;
 flex-grow: 0;
+    margin-bottom: 50px;
+}
+
+    
 }
 .h1-highlight {
-
     color: #36B37E;
 }
 
@@ -136,6 +132,11 @@ p {
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+}
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 }
