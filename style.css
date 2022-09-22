@@ -1,0 +1,76 @@
+body {
+    font-family: 'Inter', 'sans-serif'
+}
+
+@media (min-width:320px)  { 
+.background {
+    background-image: url("/images/header-illsutration-mobile.svg");
+    background-size: cover;
+}
+
+.header {
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.hamburger { 
+    margin-left: 10px;
+    float: right;
+    height: 3px;
+    width: 30px;  
+}
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: black;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+.trigger{
+    float: right;
+}
+.trigger:checked ~ .hamburger span:first-child {
+    transform: rotate(45deg);
+    top: 8px;
+
+}
+.trigger:checked ~ .hamburger span:last-child {
+    transform: rotate(-45deg);
+    top: -8px;
+    
+}
+.trigger:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+nav {
+    background: white;
+    width: 100vw;
+    padding: 20px 28px;
+    margin-top: 10px;
+    position: absolute;
+    left: -100vw;
+    box-sizing: border-box;
+    transition: left .3s ease-in-out;
+}
+.trigger:checked ~ nav {
+    left: 0;
+} 
+
+}
