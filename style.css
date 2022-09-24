@@ -3,6 +3,10 @@ body {
 }
 
 @media (min-width: 320px) {
+  body {
+    max-width: 450px;
+    margin: auto;
+  }
   .background {
     background-image: url("/images/header-illsutration-mobile.svg");
     background-size: cover;
@@ -205,7 +209,7 @@ body {
     letter-spacing: 0.03em;
     gap: 8px  
   }
-  .projectbutton {
+  button {
     padding: 12px;
     gap: 10px;
     background: #36B37F;
@@ -216,5 +220,92 @@ body {
     color: #FFFFFF;
     border: none;
     margin-bottom: 24px;
-  }  
+  }
+  button:hover {
+    background: #36B37F;
+    box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+    border-radius: 4px;
+  }
+  button:active {
+    background: #008552;;
+    border-radius: 4px;
+  }
+  .container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .container-about h2 {
+    margin-bottom: 0px;
+  }
+  .container-about p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #42526E;
+    margin-bottom: 15px;
+  }
+  .aboutimage {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .projectlist.about {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1;
+  }
+  .project1.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EBF0EE;
+    border: 1px solid #D0D9D4;
+    border-radius: 8px;
+    
+  } 
+  .projectdetail.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EBF0EE;
+    border-radius: 8px;
+
+  }
+  .projectimage.about {
+    margin-top: 50px;
+  }
+  .projectname.about {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #3A4A42;
+    
+  }
+  .skills.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+
+  }
+  .skills.about li {
+    background: #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+    letter-spacing: 0.03em;
+    gap: 8px;
+    color:#36B37E; 
+  }
+
 }
