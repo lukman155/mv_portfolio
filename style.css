@@ -243,11 +243,14 @@ section {
   }
 
   .container-about {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("/images/about-background.png");
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 45px;
     margin-bottom: 10px;
   }
 
@@ -265,13 +268,6 @@ section {
     margin-bottom: 15px;
   }
 
-  .aboutimage {
-    display: flexbox;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
   .projectlist.about {
     margin-top: 50px;
     display: grid;
@@ -285,8 +281,11 @@ section {
     background: #ebf0ee;
     border: 1px solid #d0d9d4;
     border-radius: 8px;
-    width: 327px;
-    height: 352px;
+    gap: 10px;
+  }
+
+  .projectlist.about li {
+    margin-bottom: 30px;
   }
 
   .projectdetail.about {
@@ -323,6 +322,7 @@ section {
     letter-spacing: 0.03em;
     gap: 8px;
     color: #36b37e;
+    margin-bottom: 10px;
   }
 
   .cta {
