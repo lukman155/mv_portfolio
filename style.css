@@ -202,7 +202,7 @@ section {
   }
 
   .skills {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -212,6 +212,8 @@ section {
   }
 
   .skills li {
+    margin: 2px;
+    float: left;
     background: #ebf0ee;
     border-radius: 4px;
     padding: 8px 12px;
