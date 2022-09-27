@@ -3,7 +3,7 @@ body {
 }
 
 section {
-  margin: auto;
+  margin: 10px 24px;
 }
 
 @media (min-width: 320px) {
@@ -372,4 +372,22 @@ section {
     color: #42526e;
     margin-bottom: 250px;
   }
+}
+
+.contact-us{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+}
+p.contact {
+  padding: 60px 24px 58px;
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172B4D;
 }
