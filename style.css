@@ -3,7 +3,7 @@ body {
 }
 
 section {
-  margin: 10px 24px;
+  margin: auto;
 }
 
 @media (min-width: 320px) {
@@ -363,7 +363,7 @@ section {
   }
 
   h3 {
-    margin-top: -60px;
+    margin-top: -40px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -374,53 +374,69 @@ section {
   }
 }
 
-.contact-us{
+.contact-us {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-
+  background: url('/images/contact-background-svg.svg');
+  background-size: 5vmax;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-position-y: 850px;
 }
+
 p.contact {
-  padding: 60px 24px 58px;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
-.get-in-touch{
+
+.get-in-touch {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 24px;
 }
+
 #name,
-#email{
+#email {
   box-sizing: border-box;
-  background: #FFFFFF;
-  border: 1px solid #D0D9D4;
-border-radius: 4px;
-height: 48px;
-padding-left: 16px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-color: #6B778C;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  height: 48px;
+  padding-left: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
 }
-#message{
+
+#message {
   box-sizing: border-box;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-color: #091E42;
-border: 1px solid #60C095;
-border-radius: 4px;
-background: #FFFFFF;
-padding-left: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  background: #fff;
+  padding-left: 12px;
+  height: 114px;
+}
+
+.contact-button {
+  width: 125px;
+  align-self: center;
+}
+
+.contact-us .social {
+  margin-top: 20px;
 }
