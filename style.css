@@ -391,3 +391,36 @@ p.contact {
   text-align: center;
   color: #172B4D;
 }
+.get-in-touch{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#name,
+#email{
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #D0D9D4;
+border-radius: 4px;
+height: 48px;
+padding-left: 16px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #6B778C;
+}
+#message{
+  box-sizing: border-box;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #091E42;
+border: 1px solid #60C095;
+border-radius: 4px;
+background: #FFFFFF;
+padding-left: 12px;
+}
