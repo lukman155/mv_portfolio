@@ -363,7 +363,7 @@ section {
   }
 
   h3 {
-    margin-top: -60px;
+    margin-top: -40px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -372,4 +372,71 @@ section {
     color: #42526e;
     margin-bottom: 250px;
   }
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background: url('/images/contact-background-svg.svg');
+  background-size: 5vmax;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-position-y: 850px;
+}
+
+p.contact {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+#name,
+#email {
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  height: 48px;
+  padding-left: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#message {
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  background: #fff;
+  padding-left: 12px;
+  height: 114px;
+}
+
+.contact-button {
+  width: 125px;
+  align-self: center;
+}
+
+.contact-us .social {
+  margin-top: 20px;
 }
