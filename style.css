@@ -355,35 +355,20 @@ body {
   }
 
   .contact-us {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
     background: url('/images/contact-background-svg.svg');
-    background-size: 5vmax;
     background-repeat: no-repeat;
-    background-position: center right;
-    background-position-y: 850px;
+    background-position: bottom right;
   }
 
-  p.contact {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-    color: #172b4d;
-  }
-
-  .get-in-touch {
+  .form-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 24px;
   }
 
-  #name,
-  #email {
+  .name,
+  .email {
     box-sizing: border-box;
     background: #fff;
     border: 1px solid #d0d9d4;
@@ -395,9 +380,10 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #6b778c;
+    width: 350px
   }
 
-  #message {
+  .message {
     box-sizing: border-box;
     font-style: normal;
     font-weight: 400;
@@ -414,10 +400,15 @@ body {
   .contact-button {
     width: 125px;
     align-self: center;
+    margin-bottom: 55px;
   }
 
   .contact-us .social-icons {
     margin-top: 20px;
+  }
+
+  ul.social-icons {
+    margin-bottom: 40px;
   }
 }
 

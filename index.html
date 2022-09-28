@@ -91,8 +91,6 @@
                 </div>
             </div>
         
-
-        
             <div class="project-frame flex-container">
                 <img class="project-image" src="/images/project-img.png" alt="project desc">
                 <div class="project-detail flex-container">
@@ -107,7 +105,7 @@
                 </div>
             </div>
         
-    </article>
+        </article>
     </section>
 
     <!--About Section-->
@@ -122,8 +120,10 @@
                 <br>don’t hestiate to contact me.</p>
             <button type="button" class="projectbutton">Get My Resume</button>
         </div>
+
         <div class="flex-container">
             <ul class="grid-container about">
+                
                 <li class="project-frame flex-container">
                     <img class="project-image about" src="/images/icon-languages.svg" alt="project desc">
                     <h2 class="project-name about">Languages</h2>
@@ -153,18 +153,25 @@
                 </li>
             </ul>
         </div>
-
     </section>
+
+    <!--Contact Section-->
+
     <section class="contact-us flex-container">
-        <p class="contact">I'm always interested in hearing about new projects, so if you'd like to chat please get in
+        <p class="cta">I'm always interested in hearing about
+             new projects, so if you'd like to chat please get in
             touch.</p>
-        <form action="https://formspree.io/f/mknerreb" method="POST" class="get-in-touch">
-            <input type="text" placeholder="Full name" id="name" maxlength="30" name="name" required>
-            <input type="email" name="email" id="email" placeholder="Email address" required>
-            <textarea name="message" id="message" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
-            <button type="submit" class="projectbutton contact-button">Get in touch</button>
+        <form action="https://formspree.io/f/mknerreb" method="POST" class="form-body">
+            <input type="text" placeholder="Full name" class="name" id="name" maxlength="30" name="name" required>
+            <input type="email" name="email" class="email" id="email" placeholder="Email address" required>
+            <textarea name="message" class="message" id="message" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
+            <button type="submit" class="contact-button">Get in touch</button>
         </form>
-        <!--Space Allocated for Contact Form-->
+    </section>
+
+    <!--Footer-->
+
+    <footer class="flex-container">
         <ul class="social-icons">
             <li><a href="https://twitter.com/LukmanAbdulka18"><img src="images\twitter.svg" alt="twitter"></a></li>
             <li><a href="#"><img src="images\Linkedin.svg" alt="linkedin"></a></li>
@@ -173,7 +180,8 @@
             <li><a href="#"><img src="images\angellist.svg"></a></li>
         </ul>
         <h3>lukmanabdulkarim15@gmail.com</h3>
-    </section>
+    </footer>
+
 </body>
 
 </html>
