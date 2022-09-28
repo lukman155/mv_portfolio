@@ -10,7 +10,6 @@ body {
 }
 
 @media (min-width: 320px) {
-  
   /* Header Section */
 
   .header {
@@ -144,7 +143,7 @@ body {
 
   /* End of Hero/Intro Page */
 
-  /* Start of Project Section*/
+  /* Start of Project Section */
 
   h2 {
     font-style: normal;
@@ -170,19 +169,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
-    
   }
 
   .project-frame {
     background: #ebf0ee;
     border: 1px solid #d0d9d4;
     border-radius: 8px;
-    width: 350px;    
+    width: 350px;
   }
 
   .project-image {
-   max-width: 300px;
-  
+    max-width: 300px;
   }
 
   .project-detail {
@@ -197,7 +194,7 @@ body {
     font-size: 24px;
     line-height: 32px;
     color: #3a4a42;
-    margin: 0px;
+    margin: 0;
   }
 
   .skills {
@@ -426,92 +423,8 @@ body {
   .contact-us .social-icons {
     margin-top: 20px;
   }
-
-
-  .container-about {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url("/images/about-background.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 45px;
-    margin-bottom: 10px;
-  }
-
-  .container-about h2 {
-    margin-bottom: 0;
-  }
-
-  .container-about p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    color: #42526e;
-    margin-bottom: 15px;
-  }
-
-  .project-frame.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #ebf0ee;
-    border: 1px solid #d0d9d4;
-    border-radius: 8px;
-    gap: 10px;
-  }
-
-  .grid-container.about li {
-    margin-bottom: 30px;
-  }
-
-  .project-detail.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #ebf0ee;
-    border-radius: 8px;
-  }
-
-  .project-image.about {
-    margin-top: 15%;
-  }
-
-  .project-name.about {
-    font-weight: 600;
-    font-size: 24px;
-    color: #3a4a42;
-  }
-
-  .skills.about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding-bottom: 0;
-  }
-
-  .skills.about li {
-    background: #fff;
-    border-radius: 4px;
-    padding: 8px 12px;
-    letter-spacing: 0.03em;
-    gap: 8px;
-    color: #36b37e;
-    margin-bottom: 10px;
-  }
-
-  .cta {
-    max-width: 327px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-  }
 }
- @media (min-width: 753px) {
-  
- }
+
+@media (min-width: 753px) {
+
+}
