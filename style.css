@@ -1,3 +1,5 @@
+/* #### General Styles #### */
+
 body {
   font-family: 'Inter', sans-serif;
   margin: opx 24px;
@@ -10,7 +12,10 @@ body {
   align-items: center;
 }
 
+/* #### Start of Mobile Styles #### */
+
 @media (min-width: 320px) {
+
   /* Header Section */
 
   .header {
@@ -94,7 +99,7 @@ body {
 
   /* End of Header Section */
 
-  /* Start of Hero/Intro Page */
+  /* Start of Hero/Intro Section */
 
   .background {
     background-image: url("/images/header-illsutration-mobile.svg");
@@ -142,7 +147,7 @@ body {
     margin-bottom: 150px;
   }
 
-  /* End of Hero/Intro Page */
+  /* End of Hero/Intro Section */
 
   /* Start of Project Section */
 
@@ -403,15 +408,31 @@ body {
     margin-bottom: 55px;
   }
 
-  .contact-us .social-icons {
+  footer.social-icons {
     margin-top: 20px;
   }
 
-  ul.social-icons {
+  footer.social-icons {
     margin-bottom: 40px;
   }
+  /* End of Footer Section */
 }
 
-@media (min-width: 753px) {
+/* #### End of Mobile Design #### */
 
+/* #### Start of Laptop Design #### */
+
+@media (min-width: 753px) {
+  /* Start of Header Section */
+  /* End of Header Section */
+  /* Start of Hero Section */
+  /* End of Hero Section */
+  /* Start of Project Section */
+  /* End of Project Section */
+  /* Start of About Section */
+  /* End of About Section */
+  /* Start of Contact Section */
+  /* End of Contact Section */
+  /* Start of Footer Section */
+  /* End of Footer Section */
 }
