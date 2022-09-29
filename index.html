@@ -15,11 +15,8 @@
 
     <!--Header-->
 
-    <header>
-        <div class="header">
-
-            <a class="headertext" href="#">Welcome</a>
-            <div>
+    <header class="header">
+            <a class="header-text" href="#">Welcome</a>
                 <nav>
                     <label for="trigger">
                         <input type="checkbox" class="trigger" id="trigger" />
@@ -35,176 +32,199 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
-                </nav>
-                </label>
-            </div>
-        </div>
+                    </label>
+                </nav>     
     </header>
 
-    <!--Hero Page-->
+    <!--Hero/Intro Page-->
 
-    <section>
-        <div class="background">
-            <div class="container">
-                <div class="maintext">
-                    <h1>Hey there. I’m <br>Lukman
-                        <span class="h1-highlight"><br>I’m a software <br>developer</span></h1>
-                    <div class="subtext">
-                        <p> I can help you build a product,
-                            feature or website. Look through some of my work
-                            and experience! If you like what you see and
-                            have a project you need coded,
-                            don’t hestiate to contact me.</p>
-                        <ul class="social">
-                            <li><a href="https://twitter.com/LukmanAbdulka18"><img src="images\twitter.svg"
-                                        alt="twitter"></a></li>
-                            <li><a href="#"><img src="images\Linkedin.svg" alt="linkedin"></a></li>
-                            <li><a href="#"><img src="images\medium.svg" alt="medium"></a></li>
-                            <li><a href="https://github.com/lukman155"><img src="images\github.svg" alt="github"></a>
-                            </li>
-                            <li><a href="#"><img src="images\angellist.svg"></a></li>
-                        </ul>
-                    </div>
+    <main class="background flex-container">
+        <ul class="header-desktop">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <h1 class='h1-top-space'>Hey there. I’m Lukman</h1>
+        <h1 class="h1-highlight">I’m a software developer</h1>
+            
+        <p class="hero-text">I can help you build a product,
+            feature or website. Look through some of my work
+            and experience! If you like what you see and
+            have a project you need coded,
+            don’t hestiate to contact me.</p>
 
+        <ul class="social-icons">
+            <li><a href="https://twitter.com/LukmanAbdulka18"><img src="images\twitter.svg" alt="twitter"></a></li>
+            <li><a href="#"><img src="images\Linkedin.svg" alt="linkedin"></a></li>
+            <li><a href="#"><img src="images\medium.svg" alt="medium"></a></li>
+            <li><a href="https://github.com/lukman155"><img src="images\github.svg" alt="github"></a></li>
+            <li><a href="#"><img src="images\angellist.svg"></a></li>
+        </ul>
+        <a href="#"><button class="nav-button"><img src="/images/button-header-desktop.png" alt="navigation button"></button></a>
+    </main>
+
+    <!--Project Section-->
+
+    <section class="flex-container">
+        <h2>My Recent Works</h2>
+        <hr>
+        <article class="grid-container">
+            <div class="project-frame flex-container">
+                <img class="project-image" src="/images/project-img.png" alt="project desc">
+                <div class="project-detail flex-container">
+                    <h2 class="project-name">Project Name</h2>
+                    <ul class="skills">
+                        <li>Ruby on rails</li>
+                        <li>css</li>
+                        <li>JavaScript</li>
+                        <li>html</li>
+                    </ul>
+                    <a href='#'><button type="button" class="project-button">See Project</button></a>
                 </div>
             </div>
-    </section>
-
-    <!--Midde Section-->
-
-    <section>
-        <main>
-            <div class="container-works">
-                <h2 class="subtitle">My Recent<br> <span class="underline">Works</span></h2>
-                <hr>
-                <div class="projectlist">
-                    <div class="project1">
-                        <div class="image">
-                            <img class="projectimage" src="/images/project-img.png" alt="project desc"></div>
-                        <div class="projectdetail">
-                            <h2 class="projectname">Project 1</h2>
-                            <ul class="skills">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button type="button" class="projectbutton">See Project</button>
-                        </div>
-                    </div>
-                    <div class="project2"></div>
+        
+            <div class="project-frame flex-container">
+                <img class="project-image" src="/images/project-img.png" alt="project desc">
+                <div class="project-detail flex-container">
+                    <h2 class="project-name">Project Name</h2>
+                    <ul class="skills">
+                        <li>Ruby on rails</li>
+                        <li>css</li>
+                        <li>JavaScript</li>
+                        <li>html</li>
+                    </ul>
+                    <a href='#'><button type="button" class="project-button">See Project</button></a>
                 </div>
-                <div class="projectlist">
-                    <div class="project1">
-                        <div class="image">
-                            <img class="projectimage" src="/images/project-img.png" alt="project desc"></div>
-                        <div class="projectdetail">
-                            <h2 class="projectname">Project 1</h2>
-                            <ul class="skills">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button type="button" class="projectbutton">See Project</button>
-                        </div>
-                    </div>
-                    <div class="project2"></div>
-                </div>
-                <div class="projectlist">
-                    <div class="project1">
-                        <div class="image">
-                            <img class="projectimage" src="/images/project-img.png" alt="project desc"></div>
-                        <div class="projectdetail">
-                            <h2 class="projectname">Project 1</h2>
-                            <ul class="skills">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button type="button" class="projectbutton">See Project</button>
-                        </div>
-                    </div>
-                    <div class="project2"></div>
-                </div>
-
             </div>
-        </main>
+        
+            <div class="project-frame flex-container">
+                <img class="project-image" src="/images/project-img.png" alt="project desc">
+                <div class="project-detail flex-container">
+                    <h2 class="project-name">Project Name</h2>
+                    <ul class="skills">
+                        <li>Ruby on rails</li>
+                        <li>css</li>
+                        <li>JavaScript</li>
+                        <li>html</li>
+                    </ul>
+                    <a href='#'><button type="button" class="project-button">See Project</button></a>
+                </div>
+            </div>
+
+            <div class="project-frame flex-container">
+                <img class="project-image" src="/images/project-img.png" alt="project desc">
+                <div class="project-detail flex-container">
+                    <h2 class="project-name">Project Name</h2>
+                    <ul class="skills">
+                        <li>Ruby on rails</li>
+                        <li>css</li>
+                        <li>JavaScript</li>
+                        <li>html</li>
+                    </ul>
+                    <a href='#'><button type="button" class="project-button">See Project</button></a>
+                </div>
+            </div>
+
+            <div class="project-frame flex-container">
+                <img class="project-image" src="/images/project-img.png" alt="project desc">
+                <div class="project-detail flex-container">
+                    <h2 class="project-name">Project Name</h2>
+                    <ul class="skills">
+                        <li>Ruby on rails</li>
+                        <li>css</li>
+                        <li>JavaScript</li>
+                        <li>html</li>
+                    </ul>
+                    <a href='#'><button type="button" class="project-button">See Project</button></a>
+                </div>
+            </div>
+
+            <div class="project-frame flex-container">
+                <img class="project-image" src="/images/project-img.png" alt="project desc">
+                <div class="project-detail flex-container">
+                    <h2 class="project-name">Project Name</h2>
+                    <ul class="skills">
+                        <li>Ruby on rails</li>
+                        <li>css</li>
+                        <li>JavaScript</li>
+                        <li>html</li>
+                    </ul>
+                    <a href='#'><button type="button" class="project-button">See Project</button></a>
+                </div>
+            </div>
+
+            
+        
+        </article>
     </section>
+
+    <!--About Section-->
+
     <section>
-        <div class="container-about">
-            <h2>About me </h2>
+        <div class="background about flex-container">
+            <h2 class="about-text">About me </h2>
             <p> I can help you build a product , feature or website
                 Look through some of my work and experience!
                 If you like what you see and have a project
                 you need coded,
                 <br>don’t hestiate to contact me.</p>
-            <button type="button" class="projectbutton">Get My Resume</button>
+            <a href="#"><button type="button" class="project-button">Get My Resume</button></a>
         </div>
-        <div class="container">
-            <ul class="projectlist about">
 
-                <li>
-                    <div class="project1 about">
-                        <div class="image about">
-                            <img class="projectimage about" src="/images/icon-languages.svg" alt="project desc"></div>
-                        <div class="projectdetail about">
-                            <h2 class="projectname about">Languages</h2>
-                            <ul class="skills about">
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="flex-container">
+            <ul class="grid-container about">
+                
+                <li class="project-frame flex-container">
+                    <img class="project-image about" src="/images/icon-languages.svg" alt="project desc">
+                    <h2 class="project-name about">Languages</h2>
+                    <ul class="skills about">
+                        <li>css</li>
+                        <li>JavaScript</li>
+                        <li>html</li>
+                    </ul> 
                 </li>
 
-                <li>
-                    <div class="project1 about">
-                        <div class="image about">
-                            <img class="projectimage about" src="/images/icon-frameworks.svg" alt="project desc"></div>
-                        <div class="projectdetail about">
-                            <h2 class="projectname about">Frameworks</h2>
-                            <ul class="skills about">
-                                <li>Bootstrap</li>
-                            </ul>
-                        </div>
-                    </div>
+                <li class="project-frame flex-container">
+                    <img class="project-image about" src="/images/icon-frameworks.svg" alt="project desc">
+                    <h2 class="project-name about">Frameworks</h2>
+                    <ul class="skills about">
+                        <li>Bootstrap</li>
+                    </ul>
                 </li>
 
-                <li>
-                    <div class="project1 about">
-                        <div class="image about">
-                            <img class="projectimage about" src="/images/icon-skills.svg" alt="project desc"></div>
-                        <div class="projectdetail about">
-                            <h2 class="projectname about">Skills</h2>
-                            <ul class="skills about">
-                                <li>GitHub</li>
-                                <li>CodePen</li>
-                                <li>GitLab</li>
-                                <li>Terminal</li>
-
-                            </ul>
-                        </div>
-                    </div>
+                <li class="project-frame flex-container">                      
+                    <img class="project-image about" src="/images/icon-skills.svg" alt="project desc">                            <h2 class="project-name about">Skills</h2>
+                    <ul class="skills about">
+                        <li>GitHub</li>
+                        <li>CodePen</li>
+                        <li>GitLab</li>
+                        <li>Terminal</li>
+                    </ul>
                 </li>
-
             </ul>
         </div>
-
     </section>
-    <section class="contact-us container">
-        <p class="contact">I'm always interested in hearing about new projects, so if you'd like to chat please get in
+
+    <!--Contact Section-->
+
+    <section class="contact-us flex-container">
+        <div class="flex-container">
+        <p class="cta-text">I'm always interested in hearing about
+             new projects, so if you'd like to chat please get in
             touch.</p>
-        <form action="https://formspree.io/f/mknerreb" method="POST" class="get-in-touch">
-            <input type="text" placeholder="Full name" id="name" maxlength="30" name="name" required>
-            <input type="email" name="email" id="email" placeholder="Email address" required>
-            <textarea name="message" id="message" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
-            <button type="submit" class="projectbutton contact-button">Get in touch</button>
+        <form action="https://formspree.io/f/mknerreb" method="POST" class="form-body">
+            <input type="text" placeholder="Full name" class="name" id="name" maxlength="30" name="name" required>
+            <input type="email" name="email" class="email" id="email" placeholder="Email address" required>
+            <textarea name="message" class="message" id="message" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
+            <button type="submit" class="project-button contact-button">Get in touch</button>
         </form>
-        <!--Space Allocated for Contact Form-->
-        <ul class="social">
+    </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="flex-container footer">
+        <ul class="social-icons">
             <li><a href="https://twitter.com/LukmanAbdulka18"><img src="images\twitter.svg" alt="twitter"></a></li>
             <li><a href="#"><img src="images\Linkedin.svg" alt="linkedin"></a></li>
             <li><a href="#"><img src="images\medium.svg" alt="medium"></a></li>
@@ -212,7 +232,8 @@
             <li><a href="#"><img src="images\angellist.svg"></a></li>
         </ul>
         <h3>lukmanabdulkarim15@gmail.com</h3>
-    </section>
+    </footer>
+
 </body>
 
 </html>
