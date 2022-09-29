@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  margin: 0px 0px;
+  margin: auto;
 }
 
 .flex-container {
@@ -428,6 +428,11 @@ body {
 /* #### Start of Laptop Design #### */
 
 @media (min-width: 753px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+    
+  }
 
   /* Start of Hero/about Section */
   .flex-container{
@@ -483,17 +488,19 @@ body {
   /* End of Project Section */
 
   /* Start of About Section */
-  .background.about {
-    background-image: url("/images/illustration-about-me-2-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-size: 100% 0%;
-  }
+  .background.about.left {
+    background-image: url("/images/illustration-about-me-2-desktop.svg"),
+                      url("/images/illustration\ about\ me\ desktop.svg");
+    background-repeat: no-repeat, no repear;
+    background-position: bottom left, top right;
+    background-size: 25%, 125%;
+      }
+
   .about .about-text {
     margin-top: 192px;
   }
   .about p {
-    max-width: 920px;
+    max-width: 820px;
     margin-top: 24px;
   }
   .background.about p {
