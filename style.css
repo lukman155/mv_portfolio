@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  margin: opx 24px;
+  margin: 0px 0px;
 }
 
 .flex-container {
@@ -17,6 +17,9 @@ body {
 @media (min-width: 320px) {
 
   /* Header Section */
+  .header-desktop {
+    display: none;
+  }
 
   .header {
     font-style: normal;
@@ -120,6 +123,7 @@ body {
     text-align: center;
     color: #172b4d;
     margin: 0;
+    max-width: 400px;
   }
 
   .h1-highlight {
@@ -158,6 +162,7 @@ body {
     line-height: 52px;
     text-align: center;
     color: #172b4d;
+    max-width: 300px;
   }
 
   hr {
@@ -423,13 +428,81 @@ body {
 /* #### Start of Laptop Design #### */
 
 @media (min-width: 753px) {
-  /* Start of Header Section */
-  /* End of Header Section */
-  /* Start of Hero Section */
+
+  /* Start of Hero/about Section */
+  .flex-container{
+    gap: 8px;
+  }
+  .header {
+    display: none;
+  }
+  .header-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .background {
+    
+    background-image: url("/images/Header-llustration-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 0px 0px;
+  }
+   .background h1 {
+    max-width: 100%;
+   }
+
+   .background p {
+    margin-top: 24px;
+    margin-bottom: 34px;
+    max-width: 860px;
+   }
+   .background .social-icons {
+    margin-bottom: 600px;
+   }
+ 
   /* End of Hero Section */
+
   /* Start of Project Section */
+  h2{
+    max-width: 100%;
+    margin-bottom: 52px;
+  }
+  hr {
+    display: none;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+  }
   /* End of Project Section */
+
   /* Start of About Section */
+  .background.about {
+    background-image: url("/images/illustration-about-me-2-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 100% 0%;
+  }
+  .about .about-text {
+    margin-top: 192px;
+  }
+  .about p {
+    max-width: 920px;
+    margin-top: 24px;
+  }
+  .background.about p {
+    margin-bottom: 24px;
+  }
+  .flex-container.about {
+    gap: 0px;
+  }
+  
   /* End of About Section */
   /* Start of Contact Section */
   /* End of Contact Section */
