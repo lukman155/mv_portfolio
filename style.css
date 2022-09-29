@@ -15,7 +15,6 @@ body {
 /* #### Start of Mobile Styles #### */
 
 @media (min-width: 320px) {
-
   /* Header Section */
   .header-desktop {
     display: none;
@@ -390,7 +389,7 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #6b778c;
-    width: 350px
+    width: 350px;
   }
 
   .message {
@@ -415,11 +414,9 @@ body {
 
   footer.social-icons {
     margin-top: 20px;
-  }
-
-  footer.social-icons {
     margin-bottom: 40px;
   }
+
   /* End of Footer Section */
 }
 
@@ -429,18 +426,19 @@ body {
 
 @media (min-width: 753px) {
   body {
-    padding: 0px;
-    margin: 0px;
-    
+    padding: 0;
+    margin: 0;
   }
 
   /* Start of Hero/about Section */
-  .flex-container{
+  .flex-container {
     gap: 8px;
   }
+
   .header {
     display: none;
   }
+
   .header-desktop {
     display: flex;
     justify-content: center;
@@ -449,70 +447,129 @@ body {
     padding: 20px;
     margin-bottom: 60px;
   }
-  
+
   .background {
-    
     background-image: url("/images/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 0px 0px;
+    padding: 0 0;
   }
-   .background h1 {
-    max-width: 100%;
-   }
 
-   .background p {
+  .background h1 {
+    max-width: 100%;
+  }
+
+  .background p {
     margin-top: 24px;
     margin-bottom: 34px;
     max-width: 860px;
-   }
-   .background .social-icons {
+  }
+
+  .background .social-icons {
     margin-bottom: 600px;
-   }
- 
+  }
+
   /* End of Hero Section */
 
   /* Start of Project Section */
-  h2{
+  h2 {
     max-width: 100%;
     margin-bottom: 52px;
   }
+
   hr {
     display: none;
   }
+
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 28px;
   }
+
   /* End of Project Section */
 
   /* Start of About Section */
-  .background.about.left {
-    background-image: url("/images/illustration-about-me-2-desktop.svg"),
-                      url("/images/illustration\ about\ me\ desktop.svg");
+  .background.about {
+    background-image:
+      url("/images/illustration-about-me-2-desktop.svg"),
+      url("/images/illustration\ about\ me\ desktop.svg");
     background-repeat: no-repeat, no repear;
     background-position: bottom left, top right;
     background-size: 25%, 125%;
-      }
+  }
 
   .about .about-text {
     margin-top: 192px;
   }
+
   .about p {
     max-width: 820px;
     margin-top: 24px;
   }
+
   .background.about p {
     margin-bottom: 24px;
   }
+
   .flex-container.about {
-    gap: 0px;
+    gap: 0;
   }
-  
+
   /* End of About Section */
+
   /* Start of Contact Section */
+  .contact-us {
+    background-image: url('/images/contact-form-desktop\ \(1\).svg'), url('/images/contact-form-desktop\ \(2\).svg'), url('/images/contact-form-desktop\ \(3\).svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom right, bottom left, bottom center;
+  }
+
+  .contact-us.flex-container .flex-container {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 40px;
+    margin-top: 100px;
+  }
+
+  .contact-us.flex-container .cta-text {
+    font-size: 30px;
+    width: 463px;
+  }
+
+  .form-body,
+  .name,
+  .email {
+    align-items: stretch;
+    width: 694px;
+  }
+
+  .contact-button {
+    align-self: flex-start;
+    margin-bottom: 250px;
+  }
+
   /* End of Contact Section */
+
   /* Start of Footer Section */
+  h3 {
+    display: none;
+  }
+
+  .footer .social-icons {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .footer {
+    border: 1px solid rgba(54, 179, 127, 0.24);
+    margin: 0;
+    padding: 14px;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
   /* End of Footer Section */
 }
