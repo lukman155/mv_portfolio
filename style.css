@@ -1,4 +1,4 @@
-/* #### General Styles #### */
+/* ######## ##### #### General Styles #### */
 
 body {
   font-family: 'Inter', sans-serif;
@@ -12,10 +12,10 @@ body {
   align-items: center;
 }
 
-/* #### Start of Mobile Styles #### */
+/* ######## ##### #### Start of Mobile Styles #### */
 
 @media (min-width: 320px) {
-  /* Header Section */
+  /* ######## ##### Header Section */
   .header-desktop {
     display: none;
   }
@@ -99,9 +99,9 @@ body {
     left: 0;
   }
 
-  /* End of Header Section */
+  /* ######## ##### End of Header Section */
 
-  /* Start of Hero/Intro Section */
+  /* ######## ##### Start of Hero/Intro Section */
 
   .background {
     background-image: url("/images/header-illsutration-mobile.svg");
@@ -150,9 +150,9 @@ body {
     margin-bottom: 150px;
   }
 
-  /* End of Hero/Intro Section */
+  /* ######## ##### End of Hero/Intro Section */
 
-  /* Start of Project Section */
+  /* ######## ##### Start of Project Section */
 
   h2 {
     font-style: normal;
@@ -224,7 +224,7 @@ body {
     letter-spacing: 0.03em;
   }
 
-  button {
+  .project-button {
     padding: 9px;
     background: #36b37f;
     border-radius: 7px;
@@ -236,20 +236,20 @@ body {
     margin-bottom: 20px;
   }
 
-  button:hover {
+  .project-button:hover {
     background: #36b37f;
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
     border-radius: 4px;
   }
 
-  button:active {
+  .project-button:active {
     background: #008552;
     border-radius: 4px;
   }
 
-  /* End of Project Section */
+  /* ######## ##### End of Project Section */
 
-  /* Start of About Section */
+  /* ######## ##### Start of About Section */
 
   .background.about {
     background-image: url("/images/about-background.png");
@@ -311,9 +311,9 @@ body {
     margin-bottom: 1px;
   }
 
-  /* End of About Section */
+  /* ######## ##### End of About Section */
 
-  /* Start of Contact Section */
+  /* ######## ##### Start of Contact Section */
 
   .cta-text {
     padding: 24px;
@@ -406,7 +406,7 @@ body {
     height: 114px;
   }
 
-  .contact-button {
+  .contact-.project-button {
     width: 125px;
     align-self: center;
     margin-bottom: 55px;
@@ -417,20 +417,20 @@ body {
     margin-bottom: 40px;
   }
 
-  /* End of Footer Section */
+  /* ######## ##### End of Footer Section */
 }
 
-/* #### End of Mobile Design #### */
+/* ######## ##### #### End of Mobile Design #### */
 
-/* #### Start of Laptop Design #### */
+/* ######## ##### #### Start of Laptop Design #### */
 
-@media (min-width: 753px) {
+@media (min-width: 780px) {
   body {
     padding: 0;
     margin: 0;
   }
 
-  /* Start of Hero/about Section */
+  /* ######## ##### Start of Hero/about Section */
   .flex-container {
     gap: 8px;
   }
@@ -467,12 +467,26 @@ body {
   }
 
   .background .social-icons {
-    margin-bottom: 600px;
+    margin-bottom: 60px;
   }
 
-  /* End of Hero Section */
+  .nav-button {
+    border: none;
+    background: none;
+  }
 
-  /* Start of Project Section */
+  .nav-button img {
+    margin-bottom: 450px;
+    border: 1px solid #acb7c3;
+    background: #fff;
+    width: auto;
+    padding: 10px;
+    border-radius: 50px;
+  }
+
+  /* ######## ##### End of Hero Section */
+
+  /* ######## ##### Start of Project Section */
   h2 {
     max-width: 100%;
     margin-bottom: 52px;
@@ -487,9 +501,9 @@ body {
     gap: 28px;
   }
 
-  /* End of Project Section */
+  /* ######## ##### End of Project Section */
 
-  /* Start of About Section */
+  /* ######## ##### Start of About Section */
   .background.about {
     background-image:
       url("/images/illustration-about-me-2-desktop.svg"),
@@ -516,9 +530,9 @@ body {
     gap: 0;
   }
 
-  /* End of About Section */
+  /* ######## ##### End of About Section */
 
-  /* Start of Contact Section */
+  /* ######## ##### Start of Contact Section */
   .contact-us {
     background-image: url('/images/contact-form-desktop\ \(1\).svg'), url('/images/contact-form-desktop\ \(2\).svg'), url('/images/contact-form-desktop\ \(3\).svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -545,14 +559,14 @@ body {
     width: 694px;
   }
 
-  .contact-button {
+  .contact-button.project-button {
     align-self: flex-start;
     margin-bottom: 250px;
   }
 
-  /* End of Contact Section */
+  /* ######## ##### End of Contact Section */
 
-  /* Start of Footer Section */
+  /* ######## ##### Start of Footer Section */
   h3 {
     display: none;
   }
@@ -571,5 +585,5 @@ body {
     margin-top: 50px;
   }
 
-  /* End of Footer Section */
+  /* ######## ##### End of Footer Section */
 }
