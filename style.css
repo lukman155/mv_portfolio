@@ -186,6 +186,20 @@ body {
     border: 1px solid #d0d9d4;
     border-radius: 8px;
     width: 350px;
+    border: 1px solid var(--bs-gray-dark);
+    cursor: pointer;
+    margin: 5px auto;
+    transition: 0.4s linear;
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(20px);
+  }
+
+  .project-frame:hover,
+  .project-frame:focus {
+    background-color: rgb(31 38 135 / 37%);
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
   }
 
   .project-image {
