@@ -260,6 +260,10 @@ body {
     background: #008552;
     border-radius: 4px;
   }
+  
+  .project-button:hover{
+    background: rebeccapurple;
+  }
 
   /* ######## ##### End of Project Section */
 
