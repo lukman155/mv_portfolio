@@ -153,34 +153,34 @@ body {
   }
 
   .bouncy {
-    animation: bouncy 7.5s infinite linear;
+    animation: bouncy 7s infinite linear;
     position: relative;
   }
 
   @keyframes bouncy {
     0% { top: 0; }
     40% { top: 0; }
-    43% { top: -0.9em; }
+    43% { top: -0.5em; }
     46% { top: 0; }
-    48% { top: -0.4em; }
+    48% { top: -0.2em; }
     50% { top: 0; }
     100% { top: 0; }
   }
 
   .first-bounce {
-    animation-delay: 0.11s;
+    animation-delay: 0.1s;
   }
 
   .second-bounce {
-    animation-delay: 0.21s;
+    animation-delay: 0.2s;
   }
 
   .third-bounce {
-    animation-delay: 0.31s;
+    animation-delay: 0.3s;
   }
 
   .fourth-bounce {
-    animation-delay: 0.41s;
+    animation-delay: 0.4s;
   }
 
   /* Animation for Hero Text */
