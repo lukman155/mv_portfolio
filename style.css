@@ -120,7 +120,7 @@ body {
   /* ######## ##### Start of Hero/Intro Section */
 
   .background {
-    background-image: url("/images/header-illsutration-mobile.svg");
+    background-image: url("./images/header-illsutration-mobile.svg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -351,7 +351,7 @@ body {
   /* ######## ##### Start of About Section */
 
   .background.about {
-    background-image: url("/images/about-background.png");
+    background-image: url("./images/about-background.png");
     gap: 50px;
     margin-bottom: 10px;
   }
@@ -463,7 +463,7 @@ body {
   }
 
   .contact-us {
-    background: url('/images/contact-background-svg.svg');
+    background: url('./images/contact-background-svg.svg');
     background-repeat: no-repeat;
     background-position: bottom right;
   }
@@ -556,7 +556,7 @@ body {
   }
 
   .background {
-    background-image: url("/images/Header-llustration-desktop.svg");
+    background-image: url("./images/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -613,8 +613,8 @@ body {
   /* ######## ##### Start of About Section */
   .background.about {
     background-image:
-      url("/images/illustration-about-me-2-desktop.svg"),
-      url("/images/illustration\ about\ me\ desktop.svg");
+      url("./images/illustration-about-me-2-desktop.svg"),
+      url("./images/illustration\ about\ me\ desktop.svg");
     background-repeat: no-repeat, no repear;
     background-position: bottom left, top right;
     background-size: 25%, 125%;
@@ -641,7 +641,7 @@ body {
 
   /* ######## ##### Start of Contact Section */
   .contact-us {
-    background-image: url('/images/contact-form-desktop\ \(1\).svg'), url('/images/contact-form-desktop\ \(2\).svg'), url('/images/contact-form-desktop\ \(3\).svg');
+    background-image: url('./images/contact-form-desktop\ \(1\).svg'), url('./images/contact-form-desktop\ \(2\).svg'), url('./images/contact-form-desktop\ \(3\).svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: bottom right, bottom left, bottom center;
   }
