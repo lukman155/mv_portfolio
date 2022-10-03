@@ -153,17 +153,19 @@ body {
   }
 
   .bouncy {
-    animation: bouncy 7s infinite linear;
+    animation: bouncy 6s infinite linear;
     position: relative;
   }
 
   @keyframes bouncy {
     0% { top: 0; }
     40% { top: 0; }
-    43% { top: -0.5em; }
+    43% { top: -0.4em; }
     46% { top: 0; }
-    48% { top: -0.2em; }
+    48% { top: -0.15em; }
     50% { top: 0; }
+    51% { top: -0.08; }
+    52% { top: 0; }
     100% { top: 0; }
   }
 
