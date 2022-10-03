@@ -286,17 +286,18 @@ body {
     color: #fff;
     border: none;
     margin-bottom: 20px;
+    box-shadow: inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
   }
 
   .project-button:hover {
     background: #38bb84;
-    box-shadow: 0 8px 32px 0 rgba(54, 179, 127, 0.24);
     border-radius: 7px;
     transform: translate(0.5px, -0.5px);
   }
 
   .project-button:active {
     background: #217150;
+    box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
     transform: translate(-0.5px, 0.5px);
   }
 
