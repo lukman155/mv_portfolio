@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello_Microverse
+# Microverse Portfolio
 
 ![](./hello.png)
 
-In this project, I set up and designed a personal portfolio website from a figma templete. 
+In this project, I set up, designed and deployed a personal portfolio website from a figma templete. 
 The goal here is to Understand how to parse a Figma design to create a UI..
 I will use these techniques in all Microverse projects and most likely in my future job as well, so it is important to know them!
 
@@ -18,16 +18,17 @@ I will use these techniques in all Microverse projects and most likely in my fut
 - WebHint
 - Stylelint
 - Node Packet Manager
+- Github Pages
 
 
 ## Getting Started
 
 set up a new repository and prepare it for development using best practices (e.g. linters).
-build the first 2 sections of the mobile website using the template you chose in the previous step.
+build the first required sections of the website using the template you chose in the previous step.
 
 ### Prerequisites
 
-- Basic html, css and medium Javascript know how.
+- Basic html and css.
 - Git installation
 - A text editor 
 - A terminal
