@@ -4,9 +4,9 @@
 
 ![](./hello.png)
 
-## [View Deployed Project](https://lukman155.github.io/microverse_portfolio/)
+## Project Details
 
-In this project, I set up, designed and deployed a personal portfolio website from a figma templete. 
+In this [project](https://lukman155.github.io/microverse_portfolio/), I set up, designed and deployed a personal portfolio website from a figma template. 
 The goal here is to Understand how to parse a Figma design to create a UI..
 I will use these techniques in all Microverse projects and most likely in my future job as well, so it is important to know them!
 
