@@ -9,9 +9,12 @@ const contactID = document.querySelector('#contact-section');
 const lineSelector = document.querySelector('.line');
 const lineSelector1 = document.querySelector('.line1');
 const lineSelector2 = document.querySelector('.line2');
+const cancel = document.querySelector('.cancel');
 const cancel1 = document.querySelector('.cancel1');
 const cancel2 = document.querySelector('.cancel2');
 const sticky = headerDesktop.offsetTop;
+const headerMobile = document.querySelector('.header-mobile');
+const sticky1 = headerMobile.offsetTop;
 
 function addLine() {
   lineSelector.classList.add('underline');
@@ -34,12 +37,12 @@ function removeLine2() {
 }
 
 function scrollFunction() {
-  if (window.pageYOffset > sticky) {
+  if (window.pageYOffset > sticky || window.pageYOffset > sticky1) {
     headerDesktop.classList.add('scroll');
     headerDesktop.classList.add('sticky');
   } else {
     headerDesktop.classList.remove('scroll');
-    headerDesktop.classList.add('sticky');
+    headerDesktop.classList.remove('sticky');
   }
 }
 
@@ -48,10 +51,13 @@ function mobileMenu() {
   disappear.classList.toggle('active');
   hamburger.classList.toggle('active');
   navi.classList.toggle('active');
+  headerMobile.classList.toggle('scroll');
+  headerMobile.classList.toggle('sticky');
 }
 
 hamburger.addEventListener('click', mobileMenu);
 window.onscroll = () => { scrollFunction(); };
+cancel.addEventListener('click', mobileMenu);
 cancel1.addEventListener('click', mobileMenu);
 cancel2.addEventListener('click', mobileMenu);
 
