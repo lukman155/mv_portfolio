@@ -102,7 +102,7 @@ body {
   }
 
   .navi {
-    z-index: 5;
+    z-index: 4;
     background: white;
     width: 200vh;
     height: 200vw;
