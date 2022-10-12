@@ -48,8 +48,10 @@ function removeLine2() {
 function scrollFunction() {
     if (window.pageYOffset > sticky) {
         headerDesktop.classList.add("scroll");
+        headerDesktop.classList.add("sticky");
     } else {
         headerDesktop.classList.remove("scroll");
+        headerDesktop.classList.add("sticky");
     }   
 }
 
