@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="script.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Inter:400,700,900' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Luk, A man</title>
@@ -15,36 +15,32 @@
 
     <!--Header-->
 
-    <header class="header">
+    <header class="header header-mobile">
             <a class="header-text" href="#">Welcome</a>
-                <nav>
-                    <label for="trigger">
-                        <input type="checkbox" class="trigger" id="trigger" />
+            <nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-                        <div class="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                        <ul class="navi">
-                            <li><a class="color-text" href="#project-section">Portfolio</a></li>
-                            <li><a class="color-text" href="#about-section">About</a></li>
-                            <li><a class="color-text" href="#contact-section">Contact</a></li>
-                        </ul>
-                    </label>
-                </nav>     
+                <ul class="navi">
+                    <li><a class="color-text cancel" href="#project-section">Portfolio</a></li>
+                    <li><a class="color-text cancel1" href="#about-section">About</a></li>
+                    <li><a class="color-text cancel2" href="#contact-section">Contact</a></li>
+                </ul>
+            </nav>     
     </header>
 
     <!--Hero/Intro Page-->
 
     <main class="background flex-container">
         <ul class="header-desktop">
-            <li><a class="color-text" href="#project-section">Portfolio</a></li>
-            <li><a class="color-text" href="#about-section">About</a></li>
-            <li><a class="color-text" href="#contact-section">Contact</a></li>
+            <li><a class="color-text line" href="#project-section">Portfolio</a></li>
+            <li><a class="color-text line1" href="#about-section">About</a></li>
+            <li><a class="color-text line2" href="#contact-section">Contact</a></li>
         </ul>
-        <h1 class='h1-top-space'><span class="bouncy first-bounce">Hey</span> <span class="bouncy second-bounce">there.</span> 
+        <h1 class='h1-top-space disappear'><span class="bouncy first-bounce">Hey</span> <span class="bouncy second-bounce">there.</span> 
             <span class="bouncy third-bounce">I’m</span> <span class="bouncy fourth-bounce">Lukman</span></h1>
         <h1 class="h1-highlight">I’m a software developer</h1>
             
@@ -206,7 +202,7 @@
         </div>
     </section>
 
-    <!--Contact Section-->
+    <!--Contact  Section-->
 
     <section class="contact-us flex-container" id="contact-section">
         <div class="flex-container">
@@ -221,14 +217,13 @@
         </form>
     </div>
     </section>
-
     <!--Footer-->
 
     <footer class="flex-container footer" id="bottom">
         <ul class="social-icons">
             <li class="scaled"><a  href="https://twitter.com/LukmanAbdulka18"><img src="images\twitter.svg" alt="twitter"></a></li>
-            <li class="scaled"><a href="#"><img src="images\Linkedin.svg" alt="linkedin"></a></li>
-            <li class="scaled"><a href="#"><img src="images\medium.svg" alt="medium"></a></li>
+            <li class="scaled"><a href="https://linkedin.com/in/lukmanbaba"><img src="images\Linkedin.svg" alt="linkedin"></a></li>
+            <li class="scaled"><a href="https://medium.com/@lukmanabdulkarim15"><img src="images\medium.svg" alt="medium"></a></li>
             <li class="scaled"><a href="https://github.com/lukman155"><img src="images\github.svg" alt="github"></a></li>
             <li class="scaled"><a href="#"><img src="images\angellist.svg" alt="angellist"></a></li>
         </ul>
