@@ -566,7 +566,11 @@ body {
   .header {
     display: none;
   }
-
+  .sticky {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+  }
   .header-desktop {
     display: flex;
     justify-content: center;
@@ -574,6 +578,15 @@ body {
     gap: 20px;
     padding: 20px;
     margin-bottom: 60px;
+  }
+  .scroll {
+    background-color: white;
+    width:100vw;
+
+  }
+  .underline {
+    border-bottom: 2px solid #36b37e;
+    border-radius: 2px;
   }
 
   .background {
