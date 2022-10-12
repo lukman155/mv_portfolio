@@ -115,7 +115,7 @@ body {
   }
 
   .active {
-    padding: 12px 22px 0px 24px;
+    padding: 12px 22px 0 24px;
     left: 0;
   }
 
@@ -131,19 +131,21 @@ body {
     width: 100vw;
   }
 
-  .navi .color-text {
-  font-size: 40px;
-  padding-left: 20px;
-  
-  }
- .navi li {
-  padding-top: 50px;
- 
- }
-  /* Start Transition Styles for Header Section */
   .color-text {
     transition: 0.2s;
   }
+
+  .navi .color-text {
+    font-size: 40px;
+    padding-left: 20px;
+  }
+
+  .navi li {
+    padding-top: 50px;
+  }
+
+  /* Start Transition Styles for Header Section */
+
 
   .color-text:hover {
     cursor: pointer;
@@ -197,7 +199,7 @@ body {
   }
 
   .disappear.active {
-    transform: scale(.3);
+    transform: scale(0.3);
     opacity: 0;
   }
 
