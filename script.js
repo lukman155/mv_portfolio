@@ -2,7 +2,7 @@ const hamburger = document.querySelector('.hamburger');
 const navi = document.querySelector('.navi');
 const disappear = document.querySelector('.disappear');
 const headerDisappear = document.querySelector('.header-text');
-const text = document.querySelector('.color-text');
+const text = document.querySelectorAll('.cancel');
 const headerDesktop = document.querySelector('.header-desktop');
 const projectID = document.querySelector('#project-section');
 const aboutID = document.querySelector('#about-section');
@@ -10,11 +10,14 @@ const contactID = document.querySelector('#contact-section');
 const lineSelector = document.querySelector('.line');
 const lineSelector1 = document.querySelector('.line1');
 const lineSelector2 = document.querySelector('.line2');
+const cancel1 = document.querySelector('.cancel1');
+const cancel2 = document.querySelector('.cancel2');
 var sticky = headerDesktop.offsetTop
 
 hamburger.addEventListener('click', mobileMenu);
-text.addEventListener('click', mobileMenu);
 window.onscroll = function() {scrollFunction()};
+cancel1.addEventListener('click', mobileMenu);
+cancel2.addEventListener('click', mobileMenu);
 
 projectID.addEventListener('mouseover', addLine);
 aboutID.addEventListener('mouseover', addLine1);
@@ -60,6 +63,8 @@ function mobileMenu() {
     disappear.classList.toggle('active');
     hamburger.classList.toggle('active');
     navi.classList.toggle('active');
-    text.classList.toggle('active');
+    
+    
+    //text[2].classList.toggle('active');
 }
 
