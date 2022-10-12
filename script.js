@@ -63,8 +63,5 @@ function mobileMenu() {
     disappear.classList.toggle('active');
     hamburger.classList.toggle('active');
     navi.classList.toggle('active');
-    
-    
-    //text[2].classList.toggle('active');
 }
 
