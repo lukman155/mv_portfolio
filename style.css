@@ -104,12 +104,12 @@ body {
   .navi {
     z-index: 5;
     background: white;
-    width: 100%;
-    height: 100%;
+    width: 200vh;
+    height: 200vw;
     padding: 30px 28px;
     margin-top: 0;
     position: fixed;
-    left: -100vw;
+    left: -500%;
     box-sizing: border-box;
     transition: left 0.3s ease-in-out;
   }

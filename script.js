@@ -14,7 +14,6 @@ const cancel1 = document.querySelector('.cancel1');
 const cancel2 = document.querySelector('.cancel2');
 const sticky = headerDesktop.offsetTop;
 const headerMobile = document.querySelector('.header-mobile');
-const sticky1 = headerMobile.offsetTop;
 
 function addLine() {
   lineSelector.classList.add('underline');
@@ -37,7 +36,7 @@ function removeLine2() {
 }
 
 function scrollFunction() {
-  if (window.pageYOffset > sticky || window.pageYOffset > sticky1) {
+  if (window.pageYOffset > sticky) {
     headerDesktop.classList.add('scroll');
     headerDesktop.classList.add('sticky');
   } else {
