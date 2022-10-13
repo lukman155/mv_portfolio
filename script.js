@@ -15,6 +15,51 @@ const cancel2 = document.querySelector('.cancel2');
 const sticky = headerDesktop.offsetTop;
 const headerMobile = document.querySelector('.header-mobile');
 
+let portfolio = {project1: {img:'./images/project-img.png', 
+                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
+                            skills:['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'], 
+                            source:'#', deployed:'#'},
+                  project2: {img:'./images/project-img.png', 
+                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
+                            skills:['CSS', 'JavaScript', 'HTML'], 
+                            source:'#', deployed:'#'},
+                  project3: {img:'./images/project-img.png', 
+                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
+                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
+                            source:'#', deployed:'#'},
+                  project4: {img:'./images/project-img.png', 
+                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
+                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
+                            source:'#', deployed:'#'},
+                  project5: {img:'./images/project-img.png', 
+                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
+                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
+                            source:'#', deployed:'#'},
+                  project6: {img:'./images/project-img.png', 
+                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
+                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
+                            source:'#', deployed:'#'}
+                   };
+function skillGen(y) {
+  let str=''
+  for(let x of y.skills) {
+    str += `<li>${x}</li>`
+  }
+  return str
+}
+
+
+let portGenerator = Object.keys(portfolio).reduce((accum, currKey) =>
+  accum + `
+  <div class="project-frame flex-container">
+  <img class="project-image" src="${portfolio[currKey].img}" alt="project desc">
+  <div class="project-detail flex-container">
+  <h2 class="project-name">${portfolio[currKey].name}</h2>
+  <ul class="skills">${skillGen(y=portfolio[currKey])}</ul>
+  <a href='#'><button type="button" class="project-button">See Project</button></a>
+  </div> </div>`, '');
+  document.getElementById('portfo').innerHTML = portGenerator;
+
 function addLine() {
   lineSelector.classList.add('underline');
 }

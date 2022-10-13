@@ -329,6 +329,7 @@ body {
     box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
     backdrop-filter: blur(20px);
     transition: transform 0.08s, box-shadow 0.15s;
+    box-sizing: border-box;
   }
 
   .project-frame:hover,
@@ -345,7 +346,9 @@ body {
     background: #fff;
     border-radius: 8px;
     padding: 12px;
-    height: auto;
+    height: 250px;
+    width: 349px;
+    box-sizing: border-box;
   }
 
   .project-name {
