@@ -69,30 +69,6 @@ body {
       opacity 0.3s ease-in-out;
   }
 
-  .close-pop-button span {
-    display: block;
-    height: 1px;
-    width: 25px;
-    border: 1.1px solid rgb(153, 54, 54);
-    border-radius: 2px;
-    margin-bottom: 5px;
-    position: relative;
-  }
-
-  .close-pop-button span:last-child {
-    border-color: #fff;
-    background: rgb(147, 31, 31);
-    transform: rotate(315deg) translateY(8px);
-    top: -22.5px;
-  }
-
-  .close-pop-button span:first-child {
-    border-color: #fff;
-    background: rgb(178, 29, 29);
-    transform: rotate(-315deg) translateY(-8px);
-    top: -2.5px;
-  }
-
   .hamburger.active span:first-child {
     border-color: #67798e;
     background: #67798e;
@@ -185,6 +161,7 @@ body {
   .desktop-pop-image {
     display: none;
   }
+
   /* ######## ##### Start of Hero/Intro Section */
 
   .background {
@@ -883,33 +860,33 @@ body {
     margin-top: 50px;
   }
 
-  
-
   .button-pop-mobile {
     display: none;
   }
-  
+
   .button-pop-desktop {
     display: block;
   }
+
   .desktop-pop-image {
     display: block;
     position: relative;
     width: 100%;
   }
+
   .pop-image {
     display: flex;
     flex-direction: column;
     background: none;
-    height:auto
+    height: auto;
   }
+
   .close-pop-button {
     padding: 1%;
     margin: 1%;
     cursor: pointer;
     align-self: flex-end;
-    background-color: ;
-}
+  }
 
   /* ######## ##### End of Footer Section */
 }

@@ -15,56 +15,79 @@ const cancel2 = document.querySelector('.cancel2');
 const sticky = headerDesktop.offsetTop;
 const headerMobile = document.querySelector('.header-mobile');
 
-const cancelPop = document.querySelector('.close-pop-button');
-const pop = document.querySelector('.pop-overlay');
-
-
-
-let portfolio = {project1: {buttonId: '1',img:'./images/project-img.png', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'},
-                  project2: {buttonId: '2',img:'./images/project-img.png', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['CSS', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'},
-                  project3: {buttonId: '3',img:'./images/project-img.png', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'},
-                  project4: {buttonId: '4',img:'./images/project-img.png', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'},
-                  project5: {buttonId: '5',img:'./images/project-img.png', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'},
-                  project6: {buttonId: '6',img:'./images/project-img.png', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'}
-                   };
+const portfolio = {
+  project1: {
+    buttonId: '1',
+    img: './images/project-img.png',
+    name: 'Project Name',
+    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+    skills: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    source: '#',
+    deployed: '#',
+  },
+  project2: {
+    buttonId: '2',
+    img: './images/project-img.png',
+    name: 'Project Name',
+    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+    skills: ['CSS', 'JavaScript', 'HTML'],
+    source: '#',
+    deployed: '#',
+  },
+  project3: {
+    buttonId: '3',
+    img: './images/project-img.png',
+    name: 'Project Name',
+    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+    skills: ['Ruby on Rails', 'JavaScript', 'HTML'],
+    source: '#',
+    deployed: '#',
+  },
+  project4: {
+    buttonId: '4',
+    img: './images/project-img.png',
+    name: 'Project Name',
+    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+    skills: ['Ruby on Rails', 'JavaScript', 'HTML'],
+    source: '#',
+    deployed: '#',
+  },
+  project5: {
+    buttonId: '5',
+    img: './images/project-img.png',
+    name: 'Project Name',
+    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+    skills: ['Ruby on Rails', 'JavaScript', 'HTML'],
+    source: '#',
+    deployed: '#',
+  },
+  project6: {
+    buttonId: '6',
+    img: './images/project-img.png',
+    name: 'Project Name',
+    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+    skills: ['Ruby on Rails', 'JavaScript', 'HTML'],
+    source: '#',
+    deployed: '#',
+  },
+};
 function skillGen(y) {
-  let str=''
-  for(let x of y.skills) {
-    str += `<li>${x}</li>`
+  let str = '';
+  for (const x of y.skills) {
+    str += `<li>${x}</li>`;
   }
-  return str
+  return str;
 }
 
-let a = Object.keys(portfolio)
-
-let portGenerator = Object.keys(portfolio).reduce((accum, currKey) =>
-  accum + `
+const portGenerator = Object.keys(portfolio).reduce((accum, currKey) => `${accum}
   <div class="project-frame flex-container">
   <img class="project-image" src="${portfolio[currKey].img}" alt="project desc">
   <div class="project-detail flex-container">
   <h2 class="project-name">${portfolio[currKey].name}</h2>
-  <ul class="skills">${skillGen(y=portfolio[currKey])}</ul>
+  <ul class="skills">${skillGen(y = portfolio[currKey])}</ul>
   <button type="button" id="${portfolio[currKey].buttonId}" class="project-button button-select">See Project</button>
   </div> </div>`, '');
-  document.getElementById('portfo').innerHTML = portGenerator;
+document.getElementById('portfo').innerHTML = portGenerator;
 
 function addLine() {
   lineSelector.classList.add('underline');
@@ -111,7 +134,6 @@ cancel.addEventListener('click', mobileMenu);
 cancel1.addEventListener('click', mobileMenu);
 cancel2.addEventListener('click', mobileMenu);
 
-
 hamburger.addEventListener('click', mobileMenu);
 window.onscroll = () => { scrollFunction(); };
 cancel1.addEventListener('click', mobileMenu);
@@ -125,31 +147,60 @@ projectID.addEventListener('mouseout', removeLine);
 aboutID.addEventListener('mouseout', removeLine1);
 contactID.addEventListener('mouseout', removeLine2);
 
-
-const poplist=[{buttonId: '1',img:'./images/Snapshoot-Portfolio.svg', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'},
-                {buttonId: '2',img:'./images/Snapshoot-Portfolio.svg', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['CSS', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'},
-                {buttonId: '3',img:'./images/Snapshoot-Portfolio.svg', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'},
-                {buttonId: '4',img:'./images/Snapshoot-Portfolio.svg', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'},
-                {buttonId: '5',img:'./images/Snapshoot-Portfolio.svg', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'},
-                {buttonId: '6', img:'./images/Snapshoot-Portfolio.svg', 
-                            name:'Project Name', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.', 
-                            skills:['Ruby on Rails', 'JavaScript', 'HTML'], 
-                            source:'#', deployed:'#'}];
+const poplist = [{
+  buttonId: '1',
+  img: './images/Snapshoot-Portfolio.svg',
+  name: 'Project Name',
+  desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+  skills: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+  source: '#',
+  deployed: '#',
+},
+{
+  buttonId: '2',
+  img: './images/Snapshoot-Portfolio.svg',
+  name: 'Project Name',
+  desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+  skills: ['CSS', 'JavaScript', 'HTML'],
+  source: '#',
+  deployed: '#',
+},
+{
+  buttonId: '3',
+  img: './images/Snapshoot-Portfolio.svg',
+  name: 'Project Name',
+  desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+  skills: ['Ruby on Rails', 'JavaScript', 'HTML'],
+  source: '#',
+  deployed: '#',
+},
+{
+  buttonId: '4',
+  img: './images/Snapshoot-Portfolio.svg',
+  name: 'Project Name',
+  desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+  skills: ['Ruby on Rails', 'JavaScript', 'HTML'],
+  source: '#',
+  deployed: '#',
+},
+{
+  buttonId: '5',
+  img: './images/Snapshoot-Portfolio.svg',
+  name: 'Project Name',
+  desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+  skills: ['Ruby on Rails', 'JavaScript', 'HTML'],
+  source: '#',
+  deployed: '#',
+},
+{
+  buttonId: '6',
+  img: './images/Snapshoot-Portfolio.svg',
+  name: 'Project Name',
+  desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
+  skills: ['Ruby on Rails', 'JavaScript', 'HTML'],
+  source: '#',
+  deployed: '#',
+}];
 
 const popupList = poplist.map((project) => `
 <div class="pop-overlay modal-back">
@@ -205,11 +256,7 @@ seeProjectButton.forEach((button) => {
   });
 });
 
-function togglePop() {
-  pop.classList.add('close-pop');
-}
-//cancelPop.addEventListener('click', togglePop);
-
+// cancelPop.addEventListener('click', togglePop);
 
 const email = document.querySelector('#email');
 const form = document.querySelector('#contact-form');
@@ -223,4 +270,4 @@ form.addEventListener('submit', (event) => {
       errorMsg.classList.replace('d-block', 'd-none');
     }, 3000);
   }
-})
+});
