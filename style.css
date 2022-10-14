@@ -158,6 +158,9 @@ body {
   /* End Transition Styles Header Section */
 
   /* ######## ##### End of Header Section */
+  .desktop-pop-image {
+    display: none;
+  }
 
   /* ######## ##### Start of Hero/Intro Section */
 
@@ -290,6 +293,17 @@ body {
 
   /* ######## ##### End of Hero/Intro Section */
 
+  .flex-magic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .button-pop-desktop {
+    display: none;
+  }
+
   /* ######## ##### Start of Project Section */
 
   h2 {
@@ -329,6 +343,7 @@ body {
     box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
     backdrop-filter: blur(20px);
     transition: transform 0.08s, box-shadow 0.15s;
+    box-sizing: border-box;
   }
 
   .project-frame:hover,
@@ -345,14 +360,16 @@ body {
     background: #fff;
     border-radius: 8px;
     padding: 12px;
-    height: auto;
+    height: 250px;
+    width: 349px;
+    box-sizing: border-box;
   }
 
   .project-name {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    color: #3a4a42;
+    color: #172b4d;
     margin: 0;
   }
 
@@ -397,6 +414,79 @@ body {
     box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15), inset 0 0 0 0.05em rgba(255, 255, 255, 0.12);
     transform: translate(-0.5px, 0.5px);
   }
+
+  /* ############Pop up Model########## */
+
+  .close-pop-button {
+    margin: 5%;
+    cursor: pointer;
+  }
+
+  .pop-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+    background: url(/images/popup-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+  }
+
+  .skills.pop-skills {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .pop-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* PopUp modal style */
+  .pop-overlay {
+    background: #c1c7d060;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 4%;
+    overflow: auto;
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+  }
+
+  .pop-up {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    padding: 16px;
+    position: relative;
+    border-radius: 8px;
+    margin: auto;
+    width: 65%;
+    box-sizing: border-box;
+  }
+
+  .close-popup {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: 0 2px 3px #28352f40;
+    border-radius: 4px;
+    padding: 1px 5px 0;
+    background: #c1c7d095;
+  }
+
+  /* End of Pop Up modal */
 
   /* ######## ##### End of Project Section */
 
@@ -676,6 +766,16 @@ body {
     gap: 28px;
   }
 
+  .pop-up {
+    background: #fff;
+    padding: 16px;
+    position: relative;
+    border-radius: 8px;
+    margin: auto;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
   /* ######## ##### End of Project Section */
 
   /* ######## ##### Start of About Section */
@@ -758,6 +858,34 @@ body {
     padding: 14px;
     gap: 30px;
     margin-top: 50px;
+  }
+
+  .button-pop-mobile {
+    display: none;
+  }
+
+  .button-pop-desktop {
+    display: block;
+  }
+
+  .desktop-pop-image {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .pop-image {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    height: auto;
+  }
+
+  .close-pop-button {
+    padding: 1%;
+    margin: 1%;
+    cursor: pointer;
+    align-self: flex-end;
   }
 
   /* ######## ##### End of Footer Section */
