@@ -71,20 +71,13 @@ const portfolio = {
     deployed: '#',
   },
 };
-function skillGen(y) {
-  let str = '';
-  for (const x of y.skills) {
-    str += `<li>${x}</li>`;
-  }
-  return str;
-}
 
 const portGenerator = Object.keys(portfolio).reduce((accum, currKey) => `${accum}
   <div class="project-frame flex-container">
   <img class="project-image" src="${portfolio[currKey].img}" alt="project desc">
   <div class="project-detail flex-container">
   <h2 class="project-name">${portfolio[currKey].name}</h2>
-  <ul class="skills">${skillGen(y = portfolio[currKey])}</ul>
+  <ul class="skills">${portfolio[currKey].skills.map((lang) => `<li>${lang}</li>`).join('')}</ul>
   <button type="button" id="${portfolio[currKey].buttonId}" class="project-button button-select">See Project</button>
   </div> </div>`, '');
 document.getElementById('portfo').innerHTML = portGenerator;
@@ -205,16 +198,13 @@ const poplist = [{
 const popupList = poplist.map((project) => `
 <div class="pop-overlay modal-back">
         <div class="pop-up">
-    
             <div class="pop-image"><div class="close-pop-button" ><img src='./images/exit.png'></div><img class='desktop-pop-image' src=${project.img} alt='image of my project'></div>
             <div class='flex-magic'><h2 class="project-name pop-title">${project.name}</h2> <div class="pop-link button-pop-desktop">
             <a href=${project.source}><button class="project-button live">See Live <img src='' alt=""></button></a>
             <a href=${project.deployed}><button class="project-button code">See Source <img src='' alt=""></button></a>
         </div></div>
             <ul class="skills pop-skills"> ${project.skills.map((lang) => `<li>${lang}</li>`).join('')}</ul>
-            <p class="pop-desc">${project.desc}</p>
-           
-        
+            <p class="pop-desc">${project.desc}</p>        
         <div class="pop-link button-pop-mobile">
                 <a href=${project.source}><button class="project-button live">See Live <img src='' alt=""></button></a>
                 <a href=${project.deployed}><button class="project-button code">See Source <img src='' alt=""></button></a>
@@ -255,8 +245,6 @@ seeProjectButton.forEach((button) => {
     closeModal();
   });
 });
-
-// cancelPop.addEventListener('click', togglePop);
 
 const email = document.querySelector('#email');
 const form = document.querySelector('#contact-form');
