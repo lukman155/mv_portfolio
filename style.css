@@ -8,6 +8,25 @@ body {
   margin: auto;
 }
 
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+#errormsg {
+  width: 100%;
+  padding: 3px 8px;
+  background: #fff7f7;
+  color: #ff6163;
+  border: 1px solid #ff6163;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
