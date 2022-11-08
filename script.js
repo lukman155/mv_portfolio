@@ -18,12 +18,12 @@ const headerMobile = document.querySelector('.header-mobile');
 const portfolio = {
   project1: {
     buttonId: '1',
-    img: './images/project-img.png',
-    name: 'Project Name',
-    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
-    skills: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    source: '#',
-    deployed: '#',
+    img: './images/todo-list-screenshot.png',
+    name: 'To-Do List',
+    desc: 'A to-do-list web app designed to create tasks in a to-do list and save them for later. A user can create, store and update a task as completed. Built with JavaScript.',
+    skills: ['JavaScript', 'CSS', 'HTML'],
+    source: 'https://github.com/lukman155/To-Do-list',
+    deployed: 'https://lukman155.github.io/To-Do-list/dist/',
   },
   project2: {
     buttonId: '2',
@@ -142,12 +142,12 @@ contactID.addEventListener('mouseout', removeLine2);
 
 const poplist = [{
   buttonId: '1',
-  img: './images/Snapshoot-Portfolio.svg',
-  name: 'Project Name',
-  desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga labore accusamus provident, tempora beatae totam, dolore aspernatur deleniti possimus necessitatibus at ducimus porro quaerat commodi doloribus earum optio blanditiis natus.',
-  skills: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-  source: '#',
-  deployed: '#',
+  img: './images/todo-list-screenshot.png',
+  name: 'To-Do List',
+  desc: 'A to-do-list web app designed to create tasks in a to-do list and save them for later. A user can create, store and update a task as completed. Built with JavaScript.',
+  skills: ['JavaScript', 'CSS', 'HTML'],
+  source: 'https://github.com/lukman155/To-Do-list',
+  deployed: 'https://lukman155.github.io/To-Do-list/dist/',
 },
 {
   buttonId: '2',
@@ -200,14 +200,14 @@ const popupList = poplist.map((project) => `
         <div class="pop-up">
             <div class="pop-image"><div class="close-pop-button" ><img src='./images/exit.png'></div><img class='desktop-pop-image' src=${project.img} alt='image of my project'></div>
             <div class='flex-magic'><h2 class="project-name pop-title">${project.name}</h2> <div class="pop-link button-pop-desktop">
-            <a href=${project.source}><button class="project-button live">See Live <img src='' alt=""></button></a>
-            <a href=${project.deployed}><button class="project-button code">See Source <img src='' alt=""></button></a>
+            <a href=${project.deployed}><button class="project-button live">See Live <img src='' alt=""></button></a>
+            <a href=${project.source}><button class="project-button code">See Source <img src='' alt=""></button></a>
         </div></div>
             <ul class="skills pop-skills"> ${project.skills.map((lang) => `<li>${lang}</li>`).join('')}</ul>
             <p class="pop-desc">${project.desc}</p>        
         <div class="pop-link button-pop-mobile">
-                <a href=${project.source}><button class="project-button live">See Live <img src='' alt=""></button></a>
-                <a href=${project.deployed}><button class="project-button code">See Source <img src='' alt=""></button></a>
+                <a href=${project.deployed}><button class="project-button live">See Live <img src='' alt=""></button></a>
+                <a href=${project.source}><button class="project-button code">See Source <img src='' alt=""></button></a>
             </div>
         </div>
         </div>
