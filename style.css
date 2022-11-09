@@ -375,6 +375,10 @@ body {
     height: 100%;
   }
 
+  .project-image.fix {
+    height: 320px;
+  }
+
   .project-detail {
     background: #fff;
     border-radius: 8px;
