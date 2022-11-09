@@ -21,7 +21,7 @@ const portfolio = {
     img: './images/todo-list-screenshot.png',
     name: 'To-Do List',
     desc: 'A to-do-list web app designed to create tasks in a to-do list and save them for later. A user can create, store and update a task as completed. Built with JavaScript.',
-    skills: ['JavaScript', 'CSS', 'HTML'],
+    skills: ['JavaScript', 'CSS', 'HTML', 'Webpack'],
     source: 'https://github.com/lukman155/To-Do-list',
     deployed: 'https://lukman155.github.io/To-Do-list/dist/',
   },
@@ -74,7 +74,7 @@ const portfolio = {
 
 const portGenerator = Object.keys(portfolio).reduce((accum, currKey) => `${accum}
   <div class="project-frame flex-container">
-  <img class="project-image" src="${portfolio[currKey].img}" alt="project desc">
+  <img class="project-image fix" src="${portfolio[currKey].img}" alt="project desc">
   <div class="project-detail flex-container">
   <h2 class="project-name">${portfolio[currKey].name}</h2>
   <ul class="skills">${portfolio[currKey].skills.map((lang) => `<li>${lang}</li>`).join('')}</ul>
@@ -145,7 +145,7 @@ const poplist = [{
   img: './images/todo-list-screenshot.png',
   name: 'To-Do List',
   desc: 'A to-do-list web app designed to create tasks in a to-do list and save them for later. A user can create, store and update a task as completed. Built with JavaScript.',
-  skills: ['JavaScript', 'CSS', 'HTML'],
+  skills: ['JavaScript', 'CSS', 'HTML', 'Webpack'],
   source: 'https://github.com/lukman155/To-Do-list',
   deployed: 'https://lukman155.github.io/To-Do-list/dist/',
 },
